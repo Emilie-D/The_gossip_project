@@ -1,0 +1,14 @@
+<br />
+<center>
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> Author : <%= @gossip.user.first_name %> </li>
+    <li class="list-group-item">Title : <%= @gossip.title%></li>
+    <li class="list-group-item">Content : <%= @gossip.content%></li>
+    <li class="list-group-item">Date : <%= @gossip.created_at %></li>
+  </ul>
+</div>
+<br />
+
+<p> Tu veux en savoir plus sur l'auteur de ce gossip ? <%= link_to "Clique ici", informations_path(@user) %>  </p>
+</center>
